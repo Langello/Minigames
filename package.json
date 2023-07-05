@@ -1,8 +1,9 @@
 {
-  "name": "memotest",
+  "name": "minigames",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http:/langello.github.io/Minigames",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
