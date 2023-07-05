@@ -11,7 +11,7 @@ export default function Home() {
         imageUrl: 'https://i0.wp.com/www.aptitude-test.com/blog/wp-content/uploads/2020/11/typing.jpg?resize=525%2C350&ssl=1',
       },
       {
-        title: 'Pokémon',
+        title: 'Pokemon',
         link: './Pokemon',
         imageUrl: 'https://cdn.suwalls.com/wallpapers/games/sleeping-pikachu-pokemon-51480-400x250.jpg',
       },

@@ -8,9 +8,9 @@ function App() {
   return(
     <Routes>
       <Route path="/Minigames" element={<Home/>} />
-      <Route path="/Memotest" element={<Memotest/>} />
-      <Route path="/Pokemon" element={<Pokemon/>} />
-      <Route path="/wpm" element={<WordsPerMinute/>} />
+      <Route path="/Minigames/Memotest" element={<Memotest/>} />
+      <Route path="/Minigames/Pokemon" element={<Pokemon/>} />
+      <Route path="/Minigames/wpm" element={<WordsPerMinute/>} />
     </Routes>
   )
 }
