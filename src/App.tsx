@@ -4,6 +4,8 @@ import WordsPerMinute from "./screens/WordPerMinute";
 import Pokemon from "./screens/Pokemon";
 import Home from "./screens/Home";
 
+
+
 function App() {
   return(
     <Routes>
