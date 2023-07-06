@@ -46,7 +46,7 @@ export default function Memotest() {
       <ul
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(128px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fill, minmax(110px, 1fr))",
           gap: 24,
         }}
       >
