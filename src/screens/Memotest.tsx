@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
 
 const IMAGES = [
   "https://icongr.am/devicon/react-original-wordmark.svg?size=128&color=currentColor",
@@ -42,6 +43,7 @@ export default function Memotest() {
   };
 
   return (
+    <><Navbar/>
     <div className="contenedor">
       <ul
         style={{
@@ -68,13 +70,12 @@ export default function Memotest() {
               ) : (
                 <img
                   alt="icon"
-                  src="https://icongr.am/clarity/search.svg?size=128&color=currentColor"
-                />
+                  src="https://icongr.am/clarity/search.svg?size=128&color=currentColor" />
               )}
             </li>
           );
         })}
       </ul>
-    </div>
+    </div></>
   );
 }

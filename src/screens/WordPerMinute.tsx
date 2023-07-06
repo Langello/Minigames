@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
 
 const WORDS = [
     'banana',
@@ -128,17 +129,18 @@ export default function WordsPerMinute (){
     }, [time]);
     
     return (
-        <div style={{margin:'35px',display: "flex", flexDirection:"column", gap: 12, textAlign: "center"}}>
-        {Boolean(time) &&  <h1 style={{fontSize: 48}}>{word}</h1>}
-        <h2 style={{fontSize: 48}}>Characters typed: {characterCount}</h2>
-        <h3 style={{fontSize: 38}}>Remaining time: {time}</h3>
-        {time ? (
-            <form onSubmit={handleSubmit}>
-            <input style={{fontSize: 38}} type="text" autoFocus value={buffer} onChange={(e) => setBuffer (e.target.value)}></input>
-        </form>
-        ) : (
-            <button onClick={() => setTime(60)} style={{fontSize:'35px', margin:'25px auto',width:"200px",}}>Play</button>
-        )}
-    </div>
+        <><Navbar />
+        <div style={{ margin: '35px', display: "flex", flexDirection: "column", gap: 12, textAlign: "center" }}>
+            {Boolean(time) && <h1 style={{ fontSize: 48 }}>{word}</h1>}
+            <h2 style={{ fontSize: 48 }}>Characters typed: {characterCount}</h2>
+            <h3 style={{ fontSize: 38 }}>Remaining time: {time}</h3>
+            {time ? (
+                <form onSubmit={handleSubmit}>
+                    <input style={{ fontSize: 38 }} type="text" autoFocus value={buffer} onChange={(e) => setBuffer(e.target.value)}></input>
+                </form>
+            ) : (
+                <button onClick={() => setTime(60)} style={{ fontSize: '35px', margin: '25px auto', width: "200px", }}>Play</button>
+            )}
+        </div></>
     );
 }

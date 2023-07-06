@@ -32,6 +32,9 @@ li{
 img{
   max-width: 100%;
 }
+#imgPokemon{
+  margin-top: -100px;
+}
 
 body {
   margin: auto;
@@ -47,8 +50,24 @@ body {
 
 .contenedor{
   max-width: 700px;
-  margin:  2% auto;
+  margin: auto;
 }
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px 25px;
+}
+
+.navbar-logo img {
+  height: 60px;
+}
+
+.navbar-title {
+  margin: 0;
+}
+
 main{
   padding: 1rem;
 }

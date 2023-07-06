@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 const POKEMONS = [
     "bulbasaur",
@@ -177,33 +178,34 @@ export default function Pokemon (){
     }
 
     return (
-    <div    style={{
+        <><Navbar />
+        <div style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             height: "100vh",
         }}>
-        <img 
-            height={412}
-            style={{
-                imageRendering: "pixelated", 
-                filter: hasWon ? "" : "brightness(0) invert(1)",
+            <img
+                id="imgPokemon"
+                height={412}
+                style={{
+                    imageRendering: "pixelated",
+                    filter: hasWon ? "" : "brightness(0) invert(1)",
                 }}
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${MATCH + 1}.png`} 
-            alt="Pokemon"
-            width={412}
-        />
-        {hasWon ? (
-            <button onClick ={()=> location.reload()} style={{display: "block"}}>
-                Play again
-            </button>
-        ) : (
-            <form onSubmit={handleSubmit}>
-                <p style={{fontSize: 28, textAlign: 'center'}}>What is this pokemon called?</p>
-                <input autoFocus name="pokemon" type="text" />
-                <button type="submit">Submit</button>
-            </form>
-        )}
-    </div>
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${MATCH + 1}.png`}
+                alt="Pokemon"
+                width={412} />
+            {hasWon ? (
+                <button onClick={() => location.reload()} style={{ display: "block" }}>
+                    Play again
+                </button>
+            ) : (
+                <form onSubmit={handleSubmit}>
+                    <p style={{ fontSize: 28, textAlign: 'center' }}>What is this pokemon called?</p>
+                    <input autoFocus name="pokemon" type="text" />
+                    <button type="submit">Submit</button>
+                </form>
+            )}
+        </div></>
     )
 }
