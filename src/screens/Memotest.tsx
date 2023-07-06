@@ -70,7 +70,7 @@ export default function Memotest() {
               ) : (
                 <img
                   alt="icon"
-                  src="https://icongr.am/clarity/search.svg?size=128&color=currentColor" />
+                  src="https://icongr.am/clarity/search.svg?size=128&color=ffffff" />
               )}
             </li>
           );
